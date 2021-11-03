@@ -1,9 +1,15 @@
 <?php 
 
 class Products {
-    protected $nome;
-    protected $prezzo;
-    protected $tipologia;
+    public $nome;
+    public $prezzo;
+    public $tipologia;
     
+    public function __construct($_nome,$_prezzo,$_tipologia)
+    {
+       $this->nome= $_nome;
+       $this->prezzo= $_prezzo;
+       $this->tipologia= $_tipologia;
+    }
 
 }

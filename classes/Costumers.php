@@ -1,14 +1,17 @@
 <?php 
 
 class Costumers {
-    protected $nome;
-    protected $cognome;
-    protected $dataDiNascita;
-    protected $indirizzo;
+    public $nome;
+    public $cognome;
+    public $dataDiNascita;
+    public $indirizzo;
     
-    protected function __construct($nome,$cognome,$dataDiNascita,$indirizzo)
+    public function __construct($_nome,$_cognome,$_dataDiNascita,$_indirizzo)
     {
-        
+        $this->nome= $_nome;
+        $this->cognome= $_cognome;
+        $this->dataDiNascita= $_dataDiNascita;
+        $this->indirizzo= $_indirizzo;
     }
 
 }
